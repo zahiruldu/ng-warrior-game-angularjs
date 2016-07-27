@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title>Ng Warrior Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <!-- 1. Load libraries -->
+    <!-- IE required polyfill -->
+   <!--  <script src="https://rumblex.s3.amazonaws.com/starter/es6-shim/es6-shim.min.js"></script>
+    <script src="https://rumblex.s3.amazonaws.com/starter/zone.js/dist/zone.js"></script>
+    <script src="https://rumblex.s3.amazonaws.com/starter/reflect-metadata/Reflect.js"></script>
+    <script src="https://rumblex.s3.amazonaws.com/starter/rxjs/bundles/Rx.umd.js"></script>
+    <script src="https://rumblex.s3.amazonaws.com/starter/@angular/core/core.umd.js"></script> -->
+   <!--  <script src="https://rumblex.s3.amazonaws.com/starter/@angular/common/common.umd.js"></script>
+    <script src="https://rumblex.s3.amazonaws.com/starter/@angular/compiler/compiler.umd.js"></script> -->
+    <!-- <script src="https://rumblex.s3.amazonaws.com/starter/@angular/platform-browser/platform-browser.umd.js"></script> -->
+    <script src="https://rumblex.s3.amazonaws.com/starter/@angular/platform-browser-dynamic/platform-browser-dynamic.umd.js"></script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js" ></script>
+    <!-- 2. Load our 'modules' -->
+    <script src='app/app.component.js'></script>
+    <script src='app/game.js'></script>
+    <script src='app/main.js'></script>
+  </head>
+  <!-- 3. Display the application -->
+  <body ng-app="NgWarrior">
+
+    
+    <audio id="startSound"><source src="audio/start.mp3"></source></audio>
+    <audio id="bgSound"><source src="audio/background.mp3"></source></audio>
+    <audio id="cutSound"><source src="audio/cutting.mp3"></source></audio>
+    <audio id="missSound"><source src="audio/miss_hit_Whoosh.mp3"></source></audio>
+    <audio id="wrongSound"><source src="audio/wrong_hit.mp3"></source></audio>
+
+
+    <div ng-controller="bgCtrl" ng-click="missClick()">
+        <div class="welcome" ng-click="missClick()">{{welcome}}</div>
+        <div style="top:20px; right:20px; position:absolute; background:#5B8F1C; color:black;padding:5px;">Total Points:{{points}}</div>
+
+        
+        <div id="enemy1"> <img src="images/en1.gif" width="100" height="" ng-click="point(10,'enemy1')"/></div>
+        <div id="enemy2"> <img src="images/en2.gif" width="100" height="" ng-click="point(15,'enemy2')"/></div>
+        <div id="enemy3"> <img src="images/reloy.gif" width="100" height="" ng-click="point(10,'enemy3')"/></div>
+        <div id="enemy4"> <img src="images/wolf.gif" width="100" height="" ng-click="point(20,'enemy4')"/></div>
+        <div id="enemy5"> <img src="images/dinosaurs.gif" width="100" height="" ng-click="point(30,'enemy5')"/></div>
+         
+      <div id="ninja" ng-click="missClick()"></div>
+
+      <button  ng-click="start()" id="start">Start Game</button>
+
+      <div class="wrapper">
+        <img src="images/start_ninja.gif" width="337" height="" id="suru" />
+      </div>
+
+
+    </div>
+    <p id="footer">ANGULAR ATTACK 2016 | NG Warrior</p>
+  </body>
+</html>
