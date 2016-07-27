@@ -1,0 +1,314 @@
+body{
+	
+	 background: url(images/background.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  cursor: url('images/en1.gif')  4 12, auto;
+}
+
+.welcome {
+	font-size: 50px;
+	font-weight: bold;
+	text-align: center;
+	color: #fff;
+}
+
+
+#start {
+  display: none;
+  float: none;
+  margin: 0 auto;
+  font-size: 40px;
+  background-color: green;
+}
+
+#suru {
+  float: right;
+  margin: 0 auto;
+}
+
+#footer{
+  color: #000;
+    text-align: center;
+    z-index: 999999;
+    position: absolute;
+    bottom: 0px;
+    float: none;
+    margin: 0 auto;
+    right: 40%;
+}
+
+/*
+ Animating Ninja
+
+*/
+#ninja {
+    width: 100px;
+    height: 100px;
+    background: url('images/pose.png');
+    background-size: 100px 100px;
+    position: relative;
+    -webkit-animation: ninja 5s infinite; /* Chrome, Safari, Opera */ 
+    animation: ninja 5s infinite;
+}
+
+
+/* Chrome, Safari, Opera */ 
+@-webkit-keyframes ninja {
+    0%   {top: 350px; background: url('images/stand.png'); background-size: 100px 100px;}
+    25%  {top: 250px;  background: url('images/pose.png'); background-size: 100px 100px;}
+    50%  {top: 350px; background: url('images/stand.png'); background-size: 100px 100px; }
+    75%  {top: 200px; background: url('images/pose.png'); background-size: 100px 100px;}
+    100% {top: 350px; background: url('images/stand.png'); background-size: 100px 100px;}
+}
+
+/* Standard syntax */
+@keyframes ninja {
+   0%   {top: 350px; background: url('images/stand.png'); background-size: 100px 100px;}
+    25%  {top: 250px;  background: url('images/pose.png'); background-size: 100px 100px;}
+    50%  {top: 350px; background: url('images/stand.png'); background-size: 100px 100px;}
+    75%  {top: 200px; background: url('images/pose.png'); background-size: 100px 100px;}
+    100% {top: 350px; background: url('images/stand.png'); background-size: 100px 100px;}
+}
+
+
+
+/*
+ Animating Enemy One
+
+*/
+#enemy1 {
+    width: 100px;
+    height: 100px;
+    top: 50%;
+
+    display: none;
+    position: absolute;
+    -webkit-animation: enOne 50s infinite; /* Chrome, Safari, Opera */ 
+    animation: enOne 50s infinite;
+}
+
+#enemy1:hover{
+  cursor: url('images/stand.png')  4 12, auto;
+}
+
+
+/* Chrome, Safari, Opera */ 
+@-webkit-keyframes enOne {
+    0%   {right: 0px; }
+    10%  {right: 10%; }
+    20%  {right: 20%;}
+    30%  {right: 30%;}
+    40% {right: 40%;}
+    50%  {right: 50%; }
+    60%  {right: 60%;}
+    70%  {right: 70%;}
+    80% {right: 80%;}
+    90% {right: 90%;}
+    100% {right: 100%;}
+}
+
+/* Standard syntax */
+@keyframes enOne {
+    0%   {right: 0px; }
+    10%  {right: 10%; }
+    20%  {right: 20%;}
+    30%  {right: 30%;}
+    40% {right: 40%;}
+    50%  {right: 50%; }
+    60%  {right: 60%;}
+    70%  {right: 70%;}
+    80% {right: 80%;}
+    90% {right: 90%;}
+    100% {right: 100%;}
+}
+
+/*
+Animating enemy two
+
+*/
+
+#enemy2 {
+    width: 100px;
+    height: 100px;
+    top:70%;
+    display: none;
+    position: absolute;
+    -webkit-animation: enTwo 30s infinite; /* Chrome, Safari, Opera */ 
+    animation: enTwo 30s infinite;
+}
+
+
+/* Chrome, Safari, Opera */ 
+@-webkit-keyframes enTwo {
+    0%   {right: 0px; }
+    10%  {right: 10%; }
+    20%  {right: 20%;}
+    30%  {right: 30%;}
+    40% {right: 40%;}
+    50%  {right: 50%; }
+    60%  {right: 60%;}
+    70%  {right: 70%;}
+    80% {right: 80%;}
+    90% {right: 90%;}
+    100% {right: 100%;}
+}
+
+/* Standard syntax */
+@keyframes enTwo {
+    0%   {right: 0px; }
+    10%  {right: 10%; }
+    20%  {right: 20%;}
+    30%  {right: 30%;}
+    40% {right: 40%;}
+    50%  {right: 50%; }
+    60%  {right: 60%;}
+    70%  {right: 70%;}
+    80% {right: 80%;}
+    90% {right: 90%;}
+    100% {right: 100%;}
+}
+
+
+/*
+Animating enemy three
+
+*/
+
+#enemy3 {
+    width: 100px;
+    height: 100px;
+    top:65%;
+    display: none;
+    position: absolute;
+    -webkit-animation: enThree 80s infinite; /* Chrome, Safari, Opera */ 
+    animation: enThree 80s infinite;
+}
+
+
+/* Chrome, Safari, Opera */ 
+@-webkit-keyframes enThree {
+    0%   {right: 0px; }
+    10%  {right: 10%; }
+    20%  {right: 20%;}
+    30%  {right: 30%;}
+    40% {right: 40%;}
+    50%  {right: 50%; }
+    60%  {right: 60%;}
+    70%  {right: 70%;}
+    80% {right: 80%;}
+    90% {right: 90%;}
+    100% {right: 100%;}
+}
+
+/* Standard syntax */
+@keyframes enThree {
+    0%   {right: 0px; }
+    10%  {right: 10%; }
+    20%  {right: 20%;}
+    30%  {right: 30%;}
+    40% {right: 40%;}
+    50%  {right: 50%; }
+    60%  {right: 60%;}
+    70%  {right: 70%;}
+    80% {right: 80%;}
+    90% {right: 90%;}
+    100% {right: 100%;}
+}
+
+
+/*
+Animating enemy four
+
+*/
+
+#enemy4 {
+    width: 100px;
+    height: 100px;
+    top:80%;
+    display: none;
+    position: absolute;
+    -webkit-animation: enFour 70s infinite; /* Chrome, Safari, Opera */ 
+    animation: enFour 70s infinite;
+}
+
+
+/* Chrome, Safari, Opera */ 
+@-webkit-keyframes enFour {
+    0%   {right: 0px; }
+    10%  {right: 10%; }
+    20%  {right: 20%;}
+    30%  {right: 30%;}
+    40% {right: 40%;}
+    50%  {right: 50%; }
+    60%  {right: 60%;}
+    70%  {right: 70%;}
+    80% {right: 80%;}
+    90% {right: 90%;}
+    100% {right: 100%;}
+}
+
+/* Standard syntax */
+@keyframes enFour {
+    0%   {right: 0px; }
+    10%  {right: 10%; }
+    20%  {right: 20%;}
+    30%  {right: 30%;}
+    40% {right: 40%;}
+    50%  {right: 50%; }
+    60%  {right: 60%;}
+    70%  {right: 70%;}
+    80% {right: 80%;}
+    90% {right: 90%;}
+    100% {right: 100%;}
+}
+
+
+/*
+Animating enemy five
+
+*/
+
+#enemy5 {
+    width: 100px;
+    height: 100px;
+    top:70%;
+    display: none;
+    position: absolute;
+    -webkit-animation: enFive 30s infinite; /* Chrome, Safari, Opera */ 
+    animation: enFive 30s infinite;
+}
+
+
+/* Chrome, Safari, Opera */ 
+@-webkit-keyframes enFive {
+    0%   {left: 0px; }
+    10%  {left: 10%; }
+    20%  {left: 20%;}
+    30%  {left: 30%;}
+    40% {left: 40%;}
+    50%  {left: 50%; }
+    60%  {left: 60%;}
+    70%  {left: 70%;}
+    80% {left: 80%;}
+    90% {left: 90%;}
+    100% {left: 100%;}
+}
+
+/* Standard syntax */
+@keyframes enFive {
+     0%   {left: 0px; }
+    10%  {left: 10%; }
+    20%  {left: 20%;}
+    30%  {left: 30%;}
+    40% {left: 40%;}
+    50%  {left: 50%; }
+    60%  {left: 60%;}
+    70%  {left: 70%;}
+    80% {left: 80%;}
+    90% {left: 90%;}
+    100% {left: 100%;}
+}
